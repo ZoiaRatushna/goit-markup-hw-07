@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,KAAK,AAAC,CACF,oBAAoB,CAAA,QAAC,CACrB,sBAAsB,CAAA,QAAC,CACvB,yBAAyB,CAAA,QAAC,CAC1B,cAAc,CAAA,UAAC,CACf,WAAW,CAAA,SAAC,CACZ,kBAAkB,CAAA,mCAAC,CACtB",
+    "sources": [
+        "../sass/base/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/base/_normalize.scss",
+        "../sass/components/_page-header.scss",
+        "../sass/components/_logo.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

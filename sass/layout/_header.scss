@@ -1,13 +1,5 @@
 
 /* Webstudio navigation container */
-.header {
-    width: 100%;
-    background:#FFFFFF;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
 .header 
 nav,
 ul, 
@@ -15,33 +7,40 @@ li {
     display: inline-block;
 }
 
-.header div {
-    padding: 0 15px;
-    justify-content: space-between;
+.header {
+    width: 100%;
+    background:#FFFFFF;
+    display: flex;
+    flex-wrap: nowrap;
+
+    div {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+
+    a {
+        text-decoration:none;
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    ul {
+        padding-top: 32px;
+        padding-inline-start: 0;
+    }
+
+    &.header-links {
+        padding-right: 56px;
+    }
+
+    &.header-contacts {
+        padding-left: 56px;
+    }
 }
 
 .logo {
     padding-top: 23px;
     padding-bottom: 24px;
-}
-
-.header a {
-    text-decoration:none;
-    font-size: 14px;
-    line-height: 1.14;
-}
-
-.header ul {
-    padding-top: 32px;
-    padding-inline-start: 0;
-}
-
-.header-links {
-    padding-right: 56px;
-}
-
-.header-contacts {
-    padding-left: 56px;
 }
 
 .web {

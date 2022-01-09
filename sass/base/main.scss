@@ -1,4 +1,11 @@
-@import "../utils/variables";
+
 @import "./normalize";
+@import "./reset";
+
 @import "../components/page-header";
 @import "../components/logo";
+
+@import "./header";
+@import "./effective-solutions";
+
+@import "../utils/variables";

@@ -41,14 +41,15 @@
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-duration: 750ms;
     animation-iteration-count: 1;
+        &.modal-window {
+            transform: scale(0.1);
+            animation-name: hideWindow;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-duration: 750ms;
+            animation-iteration-count: 1;
+    }
 }
-.is-hidden .modal-window {
-    transform: scale(0.1);
-    animation-name: hideWindow;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-duration: 750ms;
-    animation-iteration-count: 1;
-}
+
 
 .data-modal-close {
     cursor: pointer;
@@ -134,14 +135,19 @@
     height: 40px;
     background: #FFFFFF;
     box-shadow: none;
+        &, textarea {
+        outline: none;
+        &:focus {
+            border: 1px solid #2196F3;
+        }   
+    }
 }
 
-.form-input, textarea {
-    outline: none;
+.form-input:focus + .icon-modal .icon-normal {
+    display: none;
 }
-
-.form-input:focus {
-    border: 1px solid #2196F3;
+.form-input:focus + .icon-modal .icon-hover {
+    display: block;
 }
 
 .icon-modal {
@@ -151,17 +157,10 @@
     left: 15px;
     font-size: 1px;
     line-height: 1;
-}
-
-.icon-modal .icon-hover {
-    display: none;
-}
-.form-input:focus + .icon-modal .icon-normal {
-    display: none;
-}
-.form-input:focus + .icon-modal .icon-hover {
-    display: block;
-}
+        &.icon-hover {
+        display: none;
+        }
+    }
 
 .form-comment {
     height: 138px;
@@ -172,11 +171,11 @@
 .form-comment-input {
     padding: 12px 16px 12px 16px;
     resize: none;
+        &:focus {
+        border: 1px solid #2196F3;
+    }
 }
 
-.form-comment-input:focus {
-    border: 1px solid #2196F3;
-}
 
 .checkbox {
     width: 16px;
@@ -191,9 +190,7 @@
     cursor: pointer;
 }
 
-.icon-modal-check .icon-hover {
-    display: none;
-}
+
 .checkbox:checked + .icon-modal-check .icon-normal {
     display: none;
 }
@@ -205,19 +202,9 @@
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.agree-box {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    align-items: center;
-    position: relative;
-}
-
-.checkbox-total {
-    position: relative;
-    margin-right: 23px;
-    padding-top: 16px;
+    &.icon-hover {
+        display: none;
+    }
 }
 
 .agree {
@@ -238,6 +225,19 @@
     font-family:var(--main-font);
     margin: 0 0 0 0;
 }
+.agree-box {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    align-items: center;
+    position: relative;
+}
+
+.checkbox-total {
+    position: relative;
+    margin-right: 23px;
+    padding-top: 16px;
+}
+
 
 .button-modal-window {
     width: 200px;

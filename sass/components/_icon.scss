@@ -18,16 +18,14 @@
     border-radius: 50%;
     font-size: 1px;
     line-height: 1;
-}
-
-.icons:hover {
-    background-color:var(--text-secondary-color);
-    color: #FFFFFF;
-}
-
-.icons .icon-hover {
-    display: none;
-}
+        &:hover {
+            background-color:var(--text-secondary-color);
+            color: #FFFFFF;
+            & .icon-hover {
+                display: none;
+            }
+        }   
+    }
 
 .icons:hover .icon {
     display: none;

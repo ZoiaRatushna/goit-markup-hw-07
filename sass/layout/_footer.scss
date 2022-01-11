@@ -3,21 +3,18 @@
 .footer {
     width: 100%;
     background: #2F303A;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.footer address {
-    padding-top: 20px;
-    padding-bottom: 60px;
-}
-
-.footer ul {
-    font-style: normal;
-    font-weight: normal;
-    color: #FFFFFF;
+        a {
+            text-decoration: none;
+            }
+        address {
+            padding-top: 20px;
+            padding-bottom: 60px;
+            }
+        ul {
+            font-style: normal;
+            font-weight: normal;
+            color: #FFFFFF;
+            }
 }
 
 .footer .footer-link {
@@ -37,17 +34,15 @@
 
 .footer-contacts {
     padding-top: 60px;
-}
-
-.footer-contacts ul {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-}
-
-.footer-contacts li {
-    display: block;
-    padding-bottom: 9px;
+        ul {
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            }
+        li {
+            display: block;
+            padding-bottom: 9px;
+            }
 }
 
 .footer-connect {
@@ -83,12 +78,11 @@
     margin: 5px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-}
-
-.footer-icons:hover {
-    background-color:var(--text-secondary-color);
-    color: rgba(255, 255, 255, 0.1);
-}
+        &:hover {
+            background-color:var(--text-secondary-color);
+            color: rgba(255, 255, 255, 0.1);
+            }
+    }
 
 .footer-icons .footer-icon-hover {
     display: none;

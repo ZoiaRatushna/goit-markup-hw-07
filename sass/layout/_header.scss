@@ -12,32 +12,29 @@ li {
     background:#FFFFFF;
     display: flex;
     flex-wrap: nowrap;
-
     div {
         padding: 0 15px;
         justify-content: space-between;
-    }
-
-    a {
-        text-decoration:none;
-        font-size: 14px;
-        line-height: 1.14;
-    }
-
-    ul {
-        padding-top: 32px;
-        padding-inline-start: 0;
-    }
-
-    &.header-links {
-        padding-right: 56px;
-    }
-
-    &.header-contacts {
-        padding-left: 56px;
-    }
+        a {
+            text-decoration:none;
+            font-size: 14px;
+            line-height: 1.14;
+            ul {
+                padding-top: 32px;
+                padding-inline-start: 0;
+                
+                }
+            }
+        }           
+        }
+.header .header-links {
+  padding-right: 56px;
 }
 
+.header .header-contacts {
+  padding-left: 56px;
+}
+        
 .logo {
     padding-top: 23px;
     padding-bottom: 24px;
@@ -71,7 +68,10 @@ li {
 .nav-link {
     margin-right: 50px;
     color: var(--text-primery-color);
-    position: relative;
+    position: relative;  
+        &:hover {
+        color: var(--text-secondary-color);
+    }
 }
 
 .nav-link-active::after {
@@ -83,13 +83,8 @@ li {
     left: 0;
     bottom: 0;
     top: 43px;
-    
     background-color: var(--text-secondary-color);
     transition: opacity var(--cubic-transition);
-}
-   
-.nav-link:hover {
-    color: var(--text-secondary-color);
 }
 
 /* contacts link */
@@ -99,21 +94,26 @@ li {
     display: flex;
     align-items: center;
     padding-top: 0;
-}
-.contacts-link span {
-    padding-left: 10px;
-}
-.contacts-link:hover {
-    color:var(--text-secondary-color);
+        span {
+         padding-left: 10px;
+            &:hover {
+                color:var(--text-secondary-color);
+            }
+        }
 }
 
 .contacts-link .icon-hover {
-    display: none;
+  display: none;
 }
+
 .contacts-link:hover .icon-normal {
     display: none;
-}
+    }
+ 
 .contacts-link:hover .icon-hover {
-    display: block;
+display: block;
 }
+
+
+
 

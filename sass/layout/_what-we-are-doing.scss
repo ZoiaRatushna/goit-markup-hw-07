@@ -1,13 +1,8 @@
 
 /* what we are doing title */
-.what-we-are-doing {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .page-tittles {
     justify-content: center;
-
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -17,16 +12,19 @@
     padding-bottom: 50px;
 }
 
-.what-we-are-doing ul {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
-}
-
-.what-we-are-doing li {
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
+.what-we-are-doing {
+    padding-top: 94px;
+    padding-bottom: 94px;
+        ul {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-inline-start: 0;
+        }
+        li {
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+        }
 }
 
 .what-we-are-doing .description {

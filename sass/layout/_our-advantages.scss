@@ -12,19 +12,18 @@
     width: 270px;
     height: 251px;
     margin: 10px;
+        &::before {
+            content: "";
+            padding-top: 120px;
+            background: #F5F4FA;
+            border-radius: 4px;
+            display: block;
+            background-size: auto;
+            background-repeat:no-repeat;
+            background-position:center;
+        }
 }
     
-.our-advantages-list::before {
-    content: "";
-    padding-top: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    display: block;
-    background-size: auto;
-    background-repeat:no-repeat;
-    background-position:center;
-}
-
 .icon-antenna::before {
     background-image: url("../images/effective_solutions/icon/icon_antenna.svg");
 }

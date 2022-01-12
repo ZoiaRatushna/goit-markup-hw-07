@@ -1,14 +1,13 @@
 
-/* our advantages content */
-.our-advantages {
-    padding-top: 94px;
-}
-
+/* advantages content */
 .container {
     width: 1200px;
 }
+.advantages {
+    padding-top: 94px;
+}
 
-.our-advantages-list {
+.advantages__list {
     width: 270px;
     height: 251px;
     margin: 10px;
@@ -23,7 +22,24 @@
             background-position:center;
         }
 }
-    
+
+.advantages__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}  
+
+.advantages__text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
 .icon-antenna::before {
     background-image: url("../images/effective_solutions/icon/icon_antenna.svg");
 }
@@ -37,21 +53,4 @@
 }
 .icon-astronaut::before {
     background-image: url("../images/effective_solutions/icon/icon_astronaut.svg");
-}
-
-.our-advantages-title {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    padding-top: 30px;
-    padding-bottom: 10px;
-}  
-
-.our-advantages-text {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: #757575;
 }

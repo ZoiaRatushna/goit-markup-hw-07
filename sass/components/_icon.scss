@@ -20,11 +20,10 @@
     line-height: 1;
         &:hover {
             background-color:var(--text-secondary-color);
-            color: #FFFFFF;
+            color: #FFFFFF;}
             & .icon-hover {
                 display: none;
             }
-        }   
     }
 
 .icons:hover .icon {

@@ -320,12 +320,20 @@ body {
           box-shadow: none;
 }
 
-.form-input, textarea {
+.form-input textarea {
   outline: none;
 }
 
-.form-input:focus {
+.form-input :focus {
   border: 1px solid #2196F3;
+}
+
+.form-input:focus + .icon-modal .icon-normal {
+  display: none;
+}
+
+.form-input:focus + .icon-modal .icon-hover {
+  display: block;
 }
 
 .icon-modal {
@@ -341,14 +349,6 @@ body {
   display: none;
 }
 
-.form-input:focus + .icon-modal .icon-normal {
-  display: none;
-}
-
-.form-input:focus + .icon-modal .icon-hover {
-  display: block;
-}
-
 .form-comment {
   height: 138px;
   width: 448px;
@@ -360,7 +360,7 @@ body {
   resize: none;
 }
 
-.form-comment-input:focus {
+.form-comment-input :focus {
   border: 1px solid #2196F3;
 }
 
@@ -377,10 +377,6 @@ body {
   cursor: pointer;
 }
 
-.icon-modal-check .icon-hover {
-  display: none;
-}
-
 .checkbox:checked + .icon-modal-check .icon-normal {
   display: none;
 }
@@ -395,20 +391,8 @@ body {
   left: 0;
 }
 
-.agree-box {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.checkbox-total {
-  position: relative;
-  margin-right: 23px;
-  padding-top: 16px;
+.icon-modal-check .icon-hover {
+  display: none;
 }
 
 .agree {
@@ -428,6 +412,22 @@ body {
   letter-spacing: 0.03em;
   font-family: var(--main-font);
   margin: 0 0 0 0;
+}
+
+.agree-box {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.checkbox-total {
+  position: relative;
+  margin-right: 23px;
+  padding-top: 16px;
 }
 
 .button-modal-window {
@@ -589,11 +589,11 @@ li {
           padding-inline-start: 0;
 }
 
-.header.header-links {
+.header .header-links {
   padding-right: 56px;
 }
 
-.header.header-contacts {
+.header .header-contacts {
   padding-left: 56px;
 }
 
@@ -631,6 +631,12 @@ li {
   margin-right: 50px;
   color: var(--text-primery-color);
   position: relative;
+  font-weight: 500;
+  font-family: var(--main-font);
+}
+
+.nav-link:hover {
+  color: var(--text-secondary-color);
 }
 
 .nav-link-active::after {
@@ -647,10 +653,6 @@ li {
   -webkit-transition: opacity var(--cubic-transition);
   -o-transition: opacity var(--cubic-transition);
   transition: opacity var(--cubic-transition);
-}
-
-.nav-link:hover {
-  color: var(--text-secondary-color);
 }
 
 /* contacts link */
@@ -670,6 +672,8 @@ li {
 
 .contacts-link span {
   padding-left: 10px;
+  font-family: var(--main-font);
+  font-weight: 500;
 }
 
 .contacts-link:hover {
@@ -704,7 +708,6 @@ li {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  /* effective solutions_background image*/
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/effective_solutions/effective-solutions_bg_photo.jpg");
@@ -807,11 +810,6 @@ li {
 }
 
 /* what we are doing title */
-.what-we-are-doing {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .page-tittles {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -824,6 +822,11 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
+}
+
+.what-we-are-doing {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .what-we-are-doing ul {
@@ -916,7 +919,7 @@ li {
           align-items: center;
 }
 
-.icon-client:hover {
+.icon-client :hover {
   border: 1px solid #2196F3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1022,7 +1025,7 @@ li {
   pointer-events: none;
 }
 
-.portfolio-list:hover {
+.portfolio-list :hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   -webkit-transition: var(--cubic-transition);
@@ -1092,6 +1095,7 @@ li {
   width: 322px;
   padding-left: 24px;
   font-family: var(--main-font);
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;

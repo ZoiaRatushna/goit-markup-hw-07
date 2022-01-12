@@ -12,21 +12,21 @@ li {
     background:#FFFFFF;
     display: flex;
     flex-wrap: nowrap;
-    div {
-        padding: 0 15px;
-        justify-content: space-between;
+        div {
+            padding: 0 15px;
+            justify-content: space-between;
+        }
         a {
             text-decoration:none;
             font-size: 14px;
             line-height: 1.14;
-            ul {
-                padding-top: 32px;
-                padding-inline-start: 0;
-                
-                }
-            }
-        }           
         }
+        ul {
+            padding-top: 32px;
+            padding-inline-start: 0;
+        }
+    }           
+
 .header .header-links {
   padding-right: 56px;
 }
@@ -68,9 +68,11 @@ li {
 .nav-link {
     margin-right: 50px;
     color: var(--text-primery-color);
-    position: relative;  
+    position: relative;
+    font-weight: 500;
+    font-family: var(--main-font);
         &:hover {
-        color: var(--text-secondary-color);
+            color: var(--text-secondary-color);
     }
 }
 
@@ -95,11 +97,13 @@ li {
     align-items: center;
     padding-top: 0;
         span {
-         padding-left: 10px;
+            padding-left: 10px;
+            font-family: var(--main-font);
+            font-weight: 500;
+        }
             &:hover {
                 color:var(--text-secondary-color);
             }
-        }
 }
 
 .contacts-link .icon-hover {

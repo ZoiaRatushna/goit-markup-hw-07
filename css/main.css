@@ -897,7 +897,6 @@ li {
   padding-bottom: 16px;
 }
 
-/* Regular-clients */
 .regular-clients {
   padding-top: 92px;
   padding-bottom: 96px;
@@ -919,7 +918,7 @@ li {
           align-items: center;
 }
 
-.icon-client :hover {
+.icon-client:hover {
   border: 1px solid #2196F3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

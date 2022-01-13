@@ -34,36 +34,12 @@ li {
         padding-top: 23px;
         padding-bottom: 24px;
     }
-
-    
-    .header__web {
-        font-family: var(--primary-font);
-        font-style: normal;
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 1.27;
-        letter-spacing: 0.03em;
-        color: var(--text-secondary-color); 
-    }
-
-    .header__studio {
-        font-family:  var(--primary-font);
-        font-style: normal;
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 1.27;
-        letter-spacing: 0.03em;
-        color: #000000;
-    }
 }           
 
 .header .header__contacts {
   padding-left: 56px;
 }
 
-.header__webstudio{
-    color: white;
-}
 
 /* navigation link */
 .navigation {

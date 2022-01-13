@@ -17,22 +17,22 @@
             }
 }
 
-.footer .footer-link {
+.footer .footer__link {
     color: white;
 }
 
-.footer .footer-link:hover {
+.footer .footer__link:hover {
     color: var(--text-secondary-color);
 }
 
-.footer .footer-address, .footer-tel {
+.footer .footer__address, .footer__tel {
     color: rgba(255, 255, 255, 0.6);
 }
-.footer .footer-address:hover, .footer-tel:hover {
+.footer .footer__address:hover, .footer__tel:hover {
     color: var(--text-secondary-color);
 }
 
-.footer-contacts {
+.footer__contacts {
     padding-top: 60px;
         ul {
             font-size: 14px;
@@ -45,13 +45,13 @@
             }
 }
 
-.footer-connect {
+.footer__connect {
     padding-left: 65px;
     padding-top: 72px;
 }
 
-/* footer-social-links */
-.footer-icon-social-links {
+/* footer__links */
+.footer__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@
     line-height: 1;
 }
 
-.footer-social-links {
+.footer__links {
     padding-left: 5px;
     padding-bottom: 20px;
     display: flex;
@@ -72,7 +72,7 @@
     color: #FFFFFF;
 }
 
-.footer-icons {
+.footer__icons {
     display: inline-flex;
     padding: 12px 12px 12px 12px;
     margin: 5px;
@@ -84,15 +84,15 @@
             }
     }
 
-.footer-icons .footer-icon-hover {
+.footer__icons .footer__hover {
     display: none;
 }
 
-.footer-icons:hover .footer-icon {
+.footer__icons:hover .footer-icon {
     display: none;
 }
 
-.footer-icons:hover .footer-icon-hover {
+.footer__icons:hover .footer__hover {
     display: block;
 }
 
@@ -105,11 +105,11 @@
     align-items: flex-start;
 }
 
-.subscribe-form {
+.subscribe__form {
     display: flex;
 }
 
-.subscribe-text {
+.subscribe__text {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -118,7 +118,7 @@
     padding-bottom: 20px;
 }
 
-.subscribe-input {
+.subscribe__input {
     padding-left: 16px;
     font-family: var(--main-font);
     font-size: 16px;
@@ -138,7 +138,7 @@
     background: #2F303A;
 }
 
-.subscribe-button {
+.subscribe__button {
     width: 200px;
     height: 50px;
     margin-left: 12px;
@@ -157,6 +157,6 @@
     border: none;
 }
 
-.icon-subscribe {
+.subscribe__icon {
     margin-left: 10px;
 }

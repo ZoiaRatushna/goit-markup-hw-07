@@ -1,6 +1,6 @@
 
 /* our portfolio section */
-.our-portfolio {
+.portfolio {
     padding-top: 94px;
     border-top: 1px solid #ECECEC;
     h2 {
@@ -17,12 +17,12 @@
     }
 }
 
-.our-portfolio-button {
+.portfolio__button {
     padding-left: 8px;
     padding-right: 8px; 
 }
 
-.our-portfolio button {
+.portfolio button {
     padding-left: 22px;
     padding-right: 22px;
     height: 38px;
@@ -37,19 +37,19 @@
     letter-spacing: 0.03em;
 }
 
-.our-portfolio button:hover {
+.portfolio button:hover {
     background-color: var(--text-secondary-color);
     color:#FFFFFF ;
     border-radius: 4px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.our-portfolio .img-portfolio {
+.portfolio .portfolio__img {
     padding-top: 50px;
     padding-bottom: 64px;
 }
 
-.portfolio-list {
+.portfolio__list {
     position: relative;
     width: 370px;
     margin-left: 15px;
@@ -78,24 +78,24 @@
     }
 }
 
-.portfolio-list:hover::before {
+.portfolio__list:hover::before {
     clip: rect(0px, 370px, 294px, 0px);
     transition: var(--cubic-transition);
 }
 
-.portfolio-list .portfolio-masks {
+.portfolio__list .portfolio__masks {
     position: absolute;
     top: 0;
     left: 0;
     clip: rect(0px, 370px, 294px, 0px);
 }
 
-.portfolio-list:hover .portfolio-overlay {
+.portfolio__list:hover .portfolio__overlay {
     transform: translateY(0);
     transition: transform var(--cubic-transition);
 }
 
-.portfolio-overlay {
+.portfolio__overlay {
     position: absolute;
     height: 294px;
     transform: translateY(100%);
@@ -117,7 +117,7 @@
     }
 }
 
-.portfolio-title {
+.portfolio__title {
     font-weight: bold;
     color: rgba(33, 33, 33, 1);
     padding-left: 24px;
@@ -127,7 +127,7 @@
     line-height: 2;
 }
 
-.portfolio-text {
+.portfolio__text {
     color:rgba(117, 117, 117, 1);
     padding-left: 24px;
     font-size: 16px;
@@ -135,7 +135,7 @@
     padding-bottom: 20px;
 }
 
-.portfolio-link { 
+.portfolio__link { 
     text-decoration: none;
         & img { 
             margin-bottom: -5px;

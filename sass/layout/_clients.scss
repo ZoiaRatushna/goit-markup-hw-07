@@ -1,11 +1,11 @@
 
 //* Regular-clients */
-.regular-clients {
+.clients {
     padding-top: 92px;
     padding-bottom: 96px;
 }
 
-.icon-client {
+.client__icon {
     width: 170px;
     height: 92px;
 
@@ -21,14 +21,14 @@
             } 
 } 
 
-.icon-client .icon-client-hover {
+.client__icon .client__hover {
     display: none;
 }
 
-.icon-client:hover .icon-client-normal {
+.client__icon:hover .client__normal {
     display: none;
 }
 
-.icon-client:hover .icon-client-hover {
+.client__icon:hover .client__hover {
     display: block;
 }

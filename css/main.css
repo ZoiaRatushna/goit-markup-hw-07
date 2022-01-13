@@ -50,7 +50,7 @@ body {
           align-items: center;
 }
 
-.left-container {
+.container-footer {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
